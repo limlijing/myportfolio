@@ -36,47 +36,56 @@ header {
     border: 2px solid white;
 }
 
-.typing {
-    text-align: center;
-    font-size: 36px;
+.fade-title {
+    text-align:center;
+    font-size: 40px;
     font-weight: bold;
-    border-right: 4px solid white;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    animation: typing 3s steps(30) forwards, blink 0.7s infinite;
+    opacity: 0;
+    filter: blur(10px);
+    animation: fadeIn 2s ease-out forwards;
 }
 
-@keyframes typing 
-{ from{width:0} to{width:1000px} }
-@keyframes blink 
-{ 50% { border-color: transparent; } }
 
-.hamburger {
-    font-size: 28px;
-    cursor: pointer;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
 #side-menu {
     height: 100%;
-    width: 0;
-    position: fixed;
+    width: 0; 
+    position: fixed; 
     top: 0;
-    right: 0;
+    right: 0; 
     background-color: rgba(15,23,42,0.95);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: width 0.5s; 
     padding-top: 60px;
-    z-index: 20;
+    z-index: 1000; 
 }
 
 #side-menu a {
     display: block;
     color: #3b82f6;
-    font-size: 24px;
+    font-size: 22px;
     padding: 12px 30px;
     text-decoration: none;
     transition: 0.3s;
+}
+
+
+
+.hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1010; 
+    position: relative;
 }
 
 #side-menu a:hover { color: #60a5fa; }
@@ -140,7 +149,7 @@ a.btn:hover {
 <header>
     <div class="header-container">
         <img src="images/LJ.jpeg" class="profile-top" alt="my photo" />
-        <div class="typing">Hi, I am LIM LI JING. Welcome to my E-portfolio! 👋</div>
+        <div class="fade-title">Hi, I am LIM LI JING. Welcome👋</div>
         <span class="hamburger" onclick="openMenu()">&#9776;</span>
     </div>
 </header>
@@ -150,6 +159,8 @@ a.btn:hover {
     <a href="#About" onclick="closeMenu()">About</a>
     <a href="#Skills" onclick="closeMenu()">Skills</a>
     <a href="#Projects" onclick="closeMenu()">Projects</a>
+    <a href="https://lining429.my.canva.site/light-beige-sleek-and-simple-blogger-personal-website" target="_blank" onclick="closeMenu()">Certificates</a>
+    <a href="https://limlijing.github.io/studymaterials/" target="_blank" onclick="closeMenu()">Course Notes</a>
     <a href="#Contact" onclick="closeMenu()">Contact</a>
 </div>
 
@@ -185,7 +196,7 @@ a.btn:hover {
         <h3 style="color:red;">Integration Escape Room Game</h3>
         <p>A Unity-based interactive escape room experience.</p>
 
-        <h3 style="color:red;">My Mental Health App</h3>
+        <h3 style="color:red;"><a href="https://limlijing.github.io/Mental-Health-Support-/" target="_blank">My Mental Health App</a></h3>
         <p>A mobile app designed to support mental well-being by using Flutter.</p>
     </div>
 </section>
