@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIM LI JING E-Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-content">
+                <div class="fade-title">Hi, I am LIM LI JING. Welcome👋</div>
+            </div>
+            <img src="images/LJ.jpeg" class="profile-top" alt="Lim Li Jing's Profile Photo">
+        </div>
+    </header>
+
+    <span class="hamburger" onclick="openMenu()">&#9776;</span>
+
+    <div id="side-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        <a href="#About" onclick="closeMenu()">About</a>
+        <a href="#Skills" onclick="closeMenu()">Skills</a>
+        <a href="#Projects" onclick="closeMenu()">Projects</a>
+        <a href="https://lining429.my.canva.site/light-beige-sleek-and-simple-blogger-personal-website" target="_blank" onclick="closeMenu()">Certificates</a>
+        <a href="https://limlijing.github.io/studymaterials/" target="_blank" onclick="closeMenu()">Course Notes</a>
+        <a href="https://lining429.my.canva.site/marketing-personal-website-in-light-tan-and-brown-curated-editorial-style" target="_blank" onclick="closeMenu">My Family</a>
+        <a href="#Contact" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <section id="About">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>I am LIM LI JING, a year 1 data engineer student at University Teknology Malaysia.</p>
+            <p>I am 19 years old and from Malaysia.</p>
+            <p>A Kuok Foundation Scholar.</p>
+            <p>Passionate about programming, design, and creative projects.</p>
+        </div>
+    </section>
+
+    <section id="Skills">
+        <div class="card">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML / CSS / JavaScript</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>Canva</li>
+                <li>Flutter / Dart</li>
+                <li>Git / GitHub</li>
+                <li>Gemini/Scratch</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Projects">
+        <div class="card">
+            <h2>Projects</h2>
+            <h3><a href="pdf/powersolar.pdf" target="_blank" class="project-link">Solar Powered Power Bank</a></h3>
+            <p>A school engineering project involving renewable energy.(Click title for more details...)</p>
+
+            <h3><a href="pdf/escaperoom.pdf" target="_blank" class="project-link">Integration Escape Room Game</a></h3>
+            <p>An interactive escape room experience by using Gemini/Scratch.(Click title for more details...)</p>
+
+            <h3><a href="https://limlijing.github.io/Mental-Health-Support-/" target="_blank" class="project-link">My Mental Health App</a></h3>
+            <p>A mobile app designed to support mental well-being by using Flutter.(Click title for more details...)</p>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <div class="card">
+            <h2>Contact Me</h2>
+            <div class="icon-buttons">
+                <a href="mailto:limlijing@graduate.utm.my" class="icon-btn btn-email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                
+                <a href="https://github.com/limlijing" target="_blank" class="icon-btn btn-github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/lim-li-jing-13540b395" target="_blank" class="icon-btn btn-linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                
+                <a href="https://www.instagram.com/lijing_2904" target="_blank" class="icon-btn btn-instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>© designed by LIM LI JING A25CS0248</p>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
